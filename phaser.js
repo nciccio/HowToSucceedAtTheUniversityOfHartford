@@ -32,12 +32,6 @@ function create()
     });
     
     this.anims.create({
-        key: 'right',
-        frames: [ {key: 'student', frame: 4 } ],
-        frameRate: 20
-    });
-    
-    this.anims.create({
         key: 'turn',
         frames: [ {key: 'student', frame: 4 } ],
         frameRate: 20
