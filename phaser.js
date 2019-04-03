@@ -13,7 +13,7 @@ var game = new Phaser.Game(config);
 
 function preload()
 {
-    this.load.image('background', 'tilesSet.png');
+    this.load.image('background', 'tilesSet.PNG');
 }
 
 function create()
