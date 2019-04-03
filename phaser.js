@@ -14,11 +14,41 @@ var game = new Phaser.Game(config);
 function preload()
 {
     this.load.image('background', 'tilesSet.PNG');
+    this.load.spritesheet('student', 'boy avatar.png', {frameWidth: 32, frameHeight: 32 });
 }
 
 function create()
 {
     this.add.image(400, 300, 'background');
+    
+    player = this.physics.add.sprite(100, 450, 'student');
+    player.setCollideWorldBounds(true);
+    
+    this.anims.create({
+        key: 'left',
+        frames: this.anims.generateFrameNumbers('dude', {start:0, end:3}),
+        frameRate: 10,
+        repeat: -1
+    });
+    
+    this.anims.create({
+        key: 'right',
+        frames: [ {key: 'student', frame: 4 } ],
+        frameRate: 20
+    });
+    
+    this.anims.create({
+        key: 'turn',
+        frames: [ {key: 'student', frame: 4 } ],
+        frameRate: 20
+    });
+    
+    this.anims.create({
+        key: 'right',
+        frames.this.anims.generateFrameNumbers('student', {start: 5, end: 8}),
+        frameRate: 10,
+        repeat: -1
+    });
 }
 
 function update()
