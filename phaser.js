@@ -31,9 +31,9 @@ var game = new Phaser.Game(320, 241, Phaser.AUTO, 'phaser-example', { preload: p
 
 function preload() {
 
-    game.load.image('dragon', 'assets/pics/cougar_dragonsun.png');
-    game.load.image('star', 'assets/pics/monika_krawinkel-amberstar_title.png');
-    game.load.image('nanoha', 'assets/pics/nanoha_taiken_pink.png');
+    game.load.image();
+    game.load.image();
+    game.load.image();
 
 }
 
