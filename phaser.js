@@ -50,12 +50,11 @@ function create()
         frameRate: 10,
         repeat: -1
     });
+    cursors = this.input.keyboard.createCursorKeys();
 }
 
 function update()
-{
-    cursors = this.input.keyboard.createCursorKeys()
-    
+{   
     if (cursors.left.isDown)
     {
     player.setVelocityX(-160);
