@@ -13,7 +13,7 @@ var game = new Phaser.Game(config);
 
 function preload()
 {
-    
+    this.load.image('background', 'tilesSet.png');
 }
 
 function create()
@@ -26,14 +26,15 @@ function update()
     
 }
 
+/*
 // var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 var game = new Phaser.Game(320, 241, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
 
-    game.load.image();
-    game.load.image();
-    game.load.image();
+    game.load.image('dragon', 'assets/pics/cougar_dragonsun.png');
+    game.load.image('star', 'assets/pics/monika_krawinkel-amberstar_title.png');
+    game.load.image('nanoha', 'assets/pics/nanoha_taiken_pink.png');
 
 }
 
@@ -88,3 +89,4 @@ function render () {
     // game.debug.pointer(game.input.activePointer);
 
 }
+*/
