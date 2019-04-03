@@ -5,7 +5,7 @@ var config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 300 },
+            //gravity: { y: 300 },
             debug: false
         }
     },
@@ -17,11 +17,11 @@ var config = {
 };
 
 var game = new Phaser.Game(config);
-
+var cursors = this.input.keyboard.createCursorKeys()
 function preload()
 {
     this.load.image('background', 'tilesSet.PNG');
-    this.load.spritesheet('student', 'boy avatar.png', {frameWidth: 32, frameHeight: 32 });
+    this.load.spritesheet('student', 'boy avatar.png', {frameWidth: 200, frameHeight: 250 });
 }
 
 function create()
