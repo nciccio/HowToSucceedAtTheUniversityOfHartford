@@ -17,7 +17,7 @@ var config = {
 };
 
 var game = new Phaser.Game(config);
-var cursors = this.input.keyboard.createCursorKeys()
+var cursors = this.input.keyboard.createCursorKeys();
 function preload()
 {
     this.load.image('background', 'tilesSet.PNG');
