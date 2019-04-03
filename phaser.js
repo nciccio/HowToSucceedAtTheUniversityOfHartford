@@ -17,7 +17,7 @@ var config = {
 };
 
 var game = new Phaser.Game(config);
-var cursors = this.input.keyboard.createCursorKeys();
+var cursors;
 function preload()
 {
     this.load.image('background', 'tilesSet.PNG');
@@ -54,12 +54,14 @@ function create()
 
 function update()
 {
+    cursors = this.input.keyboard.createCursorKeys()
+    
     if (cursors.left.isDown)
-{
+    {
     player.setVelocityX(-160);
 
     player.anims.play('left', true);
-}
+    }
 else if (cursors.right.isDown)
 {
     player.setVelocityX(160);
