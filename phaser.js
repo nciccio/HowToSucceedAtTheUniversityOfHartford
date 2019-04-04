@@ -28,7 +28,7 @@ function create()
 {
     this.add.image(400, 300, 'background');
     
-    player = this.physics.add.sprite(100, 45, 'student');
+    player = this.physics.add.sprite(100, 450, 'student');
     player.setCollideWorldBounds(true);
     
     this.anims.create({
