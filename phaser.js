@@ -73,8 +73,8 @@ function update()
      player.anims.play('up', true);
   } 
     else if (cursors.down.isDown) {
-    player.body.setVelocityY(160);
-      
+        player.anims.setVelocityY(160);
+          player.anims.play('down', true);
    }
 //   
     else
