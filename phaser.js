@@ -85,10 +85,7 @@ function update()
         player.anims.play('turn');
     }
 */
-if (cursors.up.isDown && player.body.touching.down)
-{
-    player.setVelocityY(-330);
-}
+
 }
 
 /*
