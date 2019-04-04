@@ -33,8 +33,8 @@ function create()
     
     this.anims.create({
         key: 'left',
-        frames: this.anims.generateFrameNumbers('student', {start:0, end:4}),
-        frameRate: 30,
+        frames: this.anims.generateFrameNumbers('student', {start:0, end:-4}),
+        frameRate: 10,
         repeat: 0
     });
     
