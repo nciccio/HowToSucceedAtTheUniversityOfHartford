@@ -55,23 +55,33 @@ function create()
 
 function update()
 {   
+//Left and right movement
     if (cursors.left.isDown)
     {
-    player.setVelocityX(-160);
-    player.anims.play('left', true);
+        player.setVelocityX(-160);
+        player.anims.play('left', true);
     }
-else if (cursors.right.isDown)
-{
-    player.setVelocityX(160);
-
-    player.anims.play('right', true);
-}
-else
-{
-    player.setVelocityX(0);
-
-    player.anims.play('turn');
-}
+  else if (cursors.right.isDown)
+  {
+      player.setVelocityX(160);
+      player.anims.play('right', true);
+  }
+//
+//Up and down momement  
+  if (cursors.up.isDown) {
+     player.anims.setVelocityY(-160);
+     player.anims.play('up', true);
+  } 
+    else if (cursors.down.isDown) {
+    player.body.setVelocityY(160);
+      
+   }
+//   
+    else
+    {
+        player.setVelocityX(0);
+        player.anims.play('turn');
+    }
 
 if (cursors.up.isDown && player.body.touching.down)
 {
