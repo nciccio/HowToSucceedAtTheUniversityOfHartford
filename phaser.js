@@ -21,7 +21,7 @@ var cursors;
 function preload()
 {
     this.load.image('background', 'tilesSet.PNG');
-    this.load.spritesheet('student', 'boy_student.png', {frameWidth: 33, frameHeight: 48 });
+    this.load.spritesheet('student', 'boy_student_real.png', {frameWidth: 31, frameHeight: 48 });
 }
 
 function create()
