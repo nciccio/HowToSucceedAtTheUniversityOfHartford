@@ -69,11 +69,11 @@ function update()
 //
 //Up and down momement  
   if (cursors.up.isDown) {
-     player.anims.setVelocityY(-160);
+     player.setVelocityY(-160);
      player.anims.play('up', true);
   } 
     else if (cursors.down.isDown) {
-        player.anims.setVelocityY(160);
+        player.setVelocityY(160);
           player.anims.play('down', true);
    }
 //   
