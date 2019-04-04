@@ -28,12 +28,12 @@ function create()
 {
     this.add.image(400, 300, 'background');
     
-    player = this.physics.add.sprite(100, 450, 'student');
+    player = this.physics.add.sprite(100, 45, 'student');
     player.setCollideWorldBounds(true);
     
     this.anims.create({
         key: 'left',
-        frames: this.anims.generateFrameNumbers('student', {start:0, end:-4}),
+        frames: this.anims.generateFrameNumbers('student', {start:0, end:0}),
         frameRate: 10,
         repeat: 0
     });
