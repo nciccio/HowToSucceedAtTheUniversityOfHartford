@@ -21,7 +21,7 @@ var cursors;
 function preload()
 {
     this.load.image('background', 'tilesSet.PNG');
-    this.load.spritesheet('student', 'boy avatar.png', {frameWidth: 200, frameHeight: 250 });
+    this.load.spritesheet('student', 'boy avatar.png', {frameWidth: 32, frameHeight: 32 });
 }
 
 function create()
@@ -33,7 +33,7 @@ function create()
     
     this.anims.create({
         key: 'left',
-        frames: this.anims.generateFrameNumbers('student', {start:4, end:8}),
+        frames: this.anims.generateFrameNumbers('student', {start:4, end:6}),
         frameRate: 10,
         repeat: -1
     });
