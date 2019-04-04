@@ -57,6 +57,7 @@ function update()
 {   
 //Left and right movement
     player.setVelocityX(0);
+     player.setVelocityY(0);
     if (cursors.left.isDown)
     {
         player.setVelocityX(-160);
