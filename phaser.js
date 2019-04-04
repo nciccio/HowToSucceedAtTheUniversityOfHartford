@@ -60,22 +60,22 @@ function update()
      player.setVelocityY(0);
     if (cursors.left.isDown)
     {
-        player.setVelocityX(-160);
+        player.setVelocityX(-300);
         player.anims.play('left', true);
     }
   else if (cursors.right.isDown)
   {
-      player.setVelocityX(160);
+      player.setVelocityX(300);
       player.anims.play('right', true);
   }
 //
 //Up and down momement  
   if (cursors.up.isDown) {
-     player.setVelocityY(-160);
+     player.setVelocityY(-300);
      player.anims.play('up', true);
   } 
     else if (cursors.down.isDown) {
-        player.setVelocityY(160);
+        player.setVelocityY(300);
           player.anims.play('down', true);
    }
 //   
