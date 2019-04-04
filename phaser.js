@@ -57,9 +57,7 @@ function update()
 {   
     if (cursors.left.isDown)
     {
-    player.setVelocityX(-160);
-
-    player.anims.play('left', true);
+    player.x = player.c + 64*(delta/1000);
     }
 else if (cursors.right.isDown)
 {
