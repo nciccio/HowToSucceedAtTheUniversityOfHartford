@@ -30,8 +30,8 @@ function create()
 {
     this.add.image(400, 300, 'background');
     this.add.image(200, 150, 'desk');
-    this.add.image(300, 450, 'desk');
-    this.add.image(300, 150, 'desk');
+    this.add.image(700, 450, 'desk');
+    this.add.image(700, 150, 'desk');
     this.add.image(200, 450, 'desk');
     player = this.physics.add.sprite(100, 450, 'student');
     player.setCollideWorldBounds(true);
