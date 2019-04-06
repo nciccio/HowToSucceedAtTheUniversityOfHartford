@@ -21,7 +21,7 @@ var cursors;
 function preload()
 {
     this.load.image('background', 'tilesSet.PNG');
-    this.load.spritesheet('student', 'real_student.png', {frameWidth: 51.65, frameHeight: 99 });
+    this.load.spritesheet('student', 'real_student.png', {frameWidth: 50, frameHeight: 99 });
 }
 
 function create()
@@ -84,10 +84,17 @@ function update()
      player.setVelocityY(-220);
      player.anims.play('up', true);
   } 
-    else {
+    else if (cursors.down.isDown) {
         player.setVelocityY(220);
           player.anims.play('down', true);
    }
+    
+    else{
+        player.anims.play('left', false);
+        player.anims.play('right', false);
+        player.anims.play('up', false);
+        player.anims.play('down', false);
+    }
 
 }
 
