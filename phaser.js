@@ -22,13 +22,16 @@ function preload()
 {
     this.load.image('background', 'tilesSet.PNG');
     this.load.spritesheet('student', 'real_student.png', {frameWidth: 51, frameHeight: 99 });
-    this.load.image('desk', 'newdesk.PNG');
+    this.load.image('desk', 'desk.PNG');
 }
 
 function create()
 {
     this.add.image(400, 300, 'background');
     this.add.image(300, 450, 'desk');
+    this.add.image(700, 450, 'desk');
+    this.add.image(300, 150, 'desk');
+    this.add.image(700, 150, 'desk');
     player = this.physics.add.sprite(100, 450, 'student');
     player.setCollideWorldBounds(true);
     
