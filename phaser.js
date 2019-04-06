@@ -34,28 +34,28 @@ function create()
     this.anims.create({
         key: 'left',
         frames: this.anims.generateFrameNumbers('student', {start:6, end:7}),
-        frameRate: 65,
+        frameRate: 5,
         repeat: -1
     });
     
     this.anims.create({
         key: 'right',
         frames: this.anims.generateFrameNumbers('student', {start: 3, end: 5}),
-        frameRate: 65,
+        frameRate: 5,
         repeat: -1
     });
     
     this.anims.create({
         key: 'up',
         frames: this.anims.generateFrameNumbers('student', {start: 3, end: 5}),
-        frameRate: 65,
+        frameRate: 5,
         repeat: -1
     });
     
     this.anims.create({
         key: 'down',
         frames: this.anims.generateFrameNumbers('student', {start: 4, end: 4}),
-        frameRate: 65,
+        frameRate: 5,
         repeat: -1
     });
     
