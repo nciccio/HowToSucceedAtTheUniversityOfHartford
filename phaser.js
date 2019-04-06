@@ -74,6 +74,7 @@ function update()
         player.setVelocityY(220);
           player.anims.play('down', true);
    }
+}
 //   
    /* else
     {
