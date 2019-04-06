@@ -40,10 +40,12 @@ function create()
     
     this.anims.create({
         key: 'right',
-        frames: this.anims.generateFrameNumbers('student', {start: 9, end: 12}),
+        frames: this.anims.generateFrameNumbers('student', {start: 3, end: 5}),
         frameRate: 10,
         repeat: -1
     });
+    
+    
     cursors = this.input.keyboard.createCursorKeys();
 }
 
