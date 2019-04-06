@@ -22,16 +22,17 @@ function preload()
 {
     this.load.image('background', 'tilesSet.PNG');
     this.load.spritesheet('student', 'real_student.png', {frameWidth: 51, frameHeight: 99 });
-    this.load.image('desk', 'desk.PNG');
+    this.load.image('desk', 'newdesk4.PNG');
+    this.load.image('paper', 'loose-leaf-paper3.png');
 }
 
 function create()
 {
     this.add.image(400, 300, 'background');
-    this.add.image(200, 350, 'desk');
+    this.add.image(200, 150, 'desk');
     this.add.image(300, 450, 'desk');
     this.add.image(300, 150, 'desk');
-    this.add.image(200, 250, 'desk');
+    this.add.image(200, 450, 'desk');
     player = this.physics.add.sprite(100, 450, 'student');
     player.setCollideWorldBounds(true);
     
