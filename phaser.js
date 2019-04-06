@@ -28,7 +28,7 @@ function preload()
 function create()
 {
     this.add.image(400, 300, 'background');
-    this.add.image(300, 450, 'newdesk');
+    this.add.image(300, 450, 'desk');
     player = this.physics.add.sprite(100, 450, 'student');
     player.setCollideWorldBounds(true);
     
