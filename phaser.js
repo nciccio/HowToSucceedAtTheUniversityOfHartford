@@ -38,12 +38,12 @@ function create()
         repeat: -1
     });
     
-    this.anims.create({
+    /*this.anims.create({
         key: 'right',
         frames: this.anims.generateFrameNumbers('student', {start: 3, end: 5}),
         frameRate: 10,
         repeat: -1
-    });
+    });*/
     
     
     cursors = this.input.keyboard.createCursorKeys();
