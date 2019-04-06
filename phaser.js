@@ -59,6 +59,13 @@ function create()
         repeat: -1
     });
     
+    this.anims.create({
+        key: 'still',
+        frames: this.anims.generateFrameNumbers('student', {start: 8, end: 8}),
+        frameRate: 5,
+        repeat: -1
+    });
+    
     
     cursors = this.input.keyboard.createCursorKeys();
 }
@@ -94,6 +101,7 @@ function update()
         player.anims.play('right', false);
         player.anims.play('up', false);
         player.anims.play('down', false);
+        player.anims.play('still', true);
     }
 
 }
