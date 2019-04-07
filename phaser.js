@@ -71,10 +71,10 @@ function create()
         repeat: -1
     });
     
-    this.physics.add.collider(player, desk1);
-    this.physics.add.collider(player, desk2);
-    this.physics.add.collider(player, desk3);
-    this.physics.add.collider(player, desk4);
+   // this.physics.add.collider(player, desk1);
+   // this.physics.add.collider(player, desk2);
+    //this.physics.add.collider(player, desk3);
+  //  this.physics.add.collider(player, desk4);
     
     
     cursors = this.input.keyboard.createCursorKeys();
