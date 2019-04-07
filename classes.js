@@ -2,6 +2,7 @@ class Timer {
      constructor(time) {
         this.minutes = time;
         this.seconds = 0;
+        this.semesterOver = false;
     }
 
     getTime() {
@@ -21,6 +22,15 @@ class Timer {
     setMinutes(time) {
         this.minutes = time;
     } 
+     
+    endOfSemester() {
+         if (this.minutes == 0 && this.seconds == 0) {
+              this.semester = true;
+              return this.semester;
+         } else {
+              return this.semester;
+         }
+    }
 }
 
 function countDown() {
