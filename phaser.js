@@ -36,6 +36,11 @@ function create()
     player = this.physics.add.sprite(100, 450, 'student');
     player.setCollideWorldBounds(true);
     
+    this.physics.enable(desk1);
+    this.physics.enable(desk2);
+    this.physics.enable(desk3);
+    this.physics.enable(desk4);
+    
     this.anims.create({
         key: 'left',
         frames: this.anims.generateFrameNumbers('student', {start:6, end:7}),
