@@ -29,14 +29,12 @@ function preload()
 function create()
 {
     this.add.image(400, 300, 'background');
-    this.add.image(200, 150, 'desk');
-    this.add.image(700, 450, 'desk');
-    this.add.image(700, 150, 'desk');
-    this.add.image(200, 450, 'desk');
+    desk1 = this.add.image(200, 150, 'desk');
+    desk2 = this.add.image(700, 450, 'desk');
+    desk3 = this.add.image(700, 150, 'desk');
+    desk4 = this.add.image(200, 450, 'desk');
     player = this.physics.add.sprite(100, 450, 'student');
     player.setCollideWorldBounds(true);
-    
-    this.physics.add.collider(player, 'desk');
     
     this.anims.create({
         key: 'left',
@@ -111,6 +109,10 @@ function update()
         player.anims.play('still', true);
     }
 
+    this.physics.add.collider(player, desk1);
+    this.physics.add.collider(player, desk2);
+    this.physics.add.collider(player, desk3);
+    this.physics.add.collider(player, desk4);
 }
 
 /*
