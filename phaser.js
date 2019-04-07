@@ -36,6 +36,8 @@ function create()
     player = this.physics.add.sprite(100, 450, 'student');
     player.setCollideWorldBounds(true);
     
+    this.physics.add.collider(player, 'desk');
+    
     this.anims.create({
         key: 'left',
         frames: this.anims.generateFrameNumbers('student', {start:6, end:7}),
