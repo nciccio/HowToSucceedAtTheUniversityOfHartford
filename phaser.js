@@ -71,7 +71,13 @@ function create()
         frameRate: 5,
         repeat: -1
     });
-    
+    function quiz(){
+    var quiz = new Phasetips(game, {
+    context: "Hello tooltip",
+    strokeColor: 0xff0000,
+        animation:none
+  });
+}
     this.physics.add.collider(player, desks, this.quiz, null, this);
     cursors = this.input.keyboard.createCursorKeys();
 }
@@ -112,13 +118,7 @@ function update()
     
 }
 
-function quiz(){
-    var quiz = new Phasetips(game, {
-    context: "Hello tooltip",
-    strokeColor: 0xff0000,
-        animation:none
-  });
-}
+
 /*
 // var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 var game = new Phaser.Game(320, 241, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
