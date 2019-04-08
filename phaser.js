@@ -113,7 +113,7 @@ function update()
 }
 
 function quiz(){
-    var quiz = new Phasetips(desk, {
+    var quiz = new Phasetips(game, {
     context: "Hello tooltip",
     strokeColor: 0xff0000,
         animation:none
