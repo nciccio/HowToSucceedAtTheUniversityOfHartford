@@ -116,7 +116,7 @@ function quiz(){
     var quiz = new Phasetips(desk, {
     context: "Hello tooltip",
     strokeColor: 0xff0000,
-        animation:none;
+        animation:none
   });
 }
 /*
