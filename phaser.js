@@ -118,6 +118,7 @@ function quiz(){
     strokeColor: 0xff0000,
         animation:none;
   });
+}
 /*
 // var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 var game = new Phaser.Game(320, 241, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
