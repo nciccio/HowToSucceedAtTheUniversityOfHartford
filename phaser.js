@@ -72,7 +72,7 @@ function create()
         repeat: -1
     });
     
-    this.physics.add.collider(player, desks);
+    this.physics.add.collider(player, desks, this.quiz, null, this);
     cursors = this.input.keyboard.createCursorKeys();
 }
 
@@ -112,6 +112,14 @@ function update()
     
 }
 
+function quiz(){
+    new Phasetips(gameInstance, {
+    targetObject: myObj,
+    context: "Hello tooltip",
+    strokeColor: 0xff0000,
+        animation:none;
+  });
+}
 /*
 // var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 var game = new Phaser.Game(320, 241, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
