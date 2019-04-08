@@ -9,8 +9,9 @@
 
 #title{
   color: red;
-  font-weight: bold; 
+  font-weight: bold;
+  text-align: center;
 }
 canvas{
-  margin-left: 250px;
+  margin-left: 30%;
 }
