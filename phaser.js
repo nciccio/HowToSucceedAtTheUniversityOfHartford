@@ -109,6 +109,12 @@ function update()
         player.anims.play('down', false);
         player.anims.play('still', true);
     }
+    
+    //Centers game
+    game.scale.pageAlignHorizontally = true;
+    game.scale.pageAlignVertically = true;
+    game.scale.refresh();
+    //End center game
 }
 
 /*
