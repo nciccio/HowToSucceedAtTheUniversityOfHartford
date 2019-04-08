@@ -14,5 +14,5 @@
 }
 canvas{
   margin-left: 23%;
-  border: 6px solid black;
+  border: 6px inset black;
 }
