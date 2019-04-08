@@ -113,8 +113,7 @@ function update()
 }
 
 function quiz(){
-    new Phasetips(gameInstance, {
-    targetObject: myObj,
+    var quiz = new Phasetips(desk, {
     context: "Hello tooltip",
     strokeColor: 0xff0000,
         animation:none;
