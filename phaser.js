@@ -72,7 +72,7 @@ function create()
         repeat: -1
     });
     function quiz(){
-    var quiz = new Phasetips(game, {
+    var quiz = new Phasetips(_game, {
     context: "Hello tooltip",
     strokeColor: 0xff0000
   });
