@@ -74,8 +74,7 @@ function create()
     function quiz(){
     var quiz = new Phasetips(game, {
     context: "Hello tooltip",
-    strokeColor: 0xff0000,
-        animation:none
+    strokeColor: 0xff0000
   });
 }
     this.physics.add.collider(player, desks, quiz(), null, this);
