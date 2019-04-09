@@ -72,11 +72,20 @@ function create()
         repeat: -1
     });
     function quiz(){
-    var quiz = new Phasetips(_game, {
-    context: "Hello tooltip",
-    strokeColor: 0xff0000
+    var quiz = new Phasetips{_game, {
+    targetObject: block1,
+    context: "A cute bunny but with a lot of text, that needs to wrap!",
+    strokeColor: 0xff0000,
+    position: "right"
   });
 }
+    
+  var tip1 = new Phasetips(_game, {
+    targetObject: student,
+    context: "A cute bunny but with a lot of text, that needs to wrap!",
+    strokeColor: 0xff0000,
+    position: "right",
+
     this.physics.add.collider(player, desks, quiz(), null, this);
     cursors = this.input.keyboard.createCursorKeys();
 }
