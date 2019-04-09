@@ -43,7 +43,7 @@ function countDown() {
     seconds--;
 
     if (seconds <= 0) {
-        //minutes--;
+        minutes--;
         seconds = 59;
     }
 }
