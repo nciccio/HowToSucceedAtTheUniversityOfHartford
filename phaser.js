@@ -72,7 +72,7 @@ function create()
         repeat: -1
     });
     function quiz(){
-    var quiz = new Phasetips{_game, {
+    var quiz = new Phasetips(_game, {
     targetObject: student,
     context: "A cute bunny but with a lot of text, that needs to wrap!",
     strokeColor: 0xff0000,
