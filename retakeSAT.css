@@ -1,0 +1,95 @@
+#round {
+    border-radius: 75px;
+    background: #e80d20;
+    padding: 60px; 
+    width: 730px;
+    height: 950px;
+    margin-left: 10%;
+    margin-right: 0%;
+    margin-top: 12%; 
+    font-size: 24px;
+    font-family: Calibri;
+    box-shadow: 10px 10px #2b2829;
+  } 
+  #m1 {
+    border-radius: 15px;
+    background: dimgray;
+    padding: 10px; 
+    width: 150px;
+    height: 25px;
+    margin-top: -3%;
+    margin-left: 0%;
+    margin-right: 0%; 
+    background-image: linear-gradient(to right, dimgray , white);
+  } 
+
+  #question{
+    margin-top: -3%;
+  }
+  .button {
+    color: black; 
+    border: none;
+    background-image: linear-gradient(to right, dimgray , white);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 80%;
+    margin-top: -30%;
+    margin-bottom: -10%;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  #button2{
+    color:black;
+    border: black;
+    background-image: linear-gradient(to right, dimgray , white);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 5%;
+    margin-top: -20%;
+    margin-bottom: 100%;
+    margin-right: 10%;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  #m2 {
+    border-radius: 20px;
+    background: dimgray;
+    padding: 10px; 
+    width: 150px;
+    height: 25px;
+    margin-top: -3%;
+    margin-left: 0%;
+    margin-right: 0%; 
+    background-image: linear-gradient(to right, dimgray , white);
+  } 
+
+  #bodySAT{
+background-color: dimgray;
+    color: white;
+  }
+
+  .Title{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Calibri;
+    padding: 10px;
+  }
+
+  #hawks{
+    display: block;
+   margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    height: 200px;
+    width:300px;
+    margin-top: -25%; 
+  }
