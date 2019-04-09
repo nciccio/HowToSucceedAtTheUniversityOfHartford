@@ -75,7 +75,7 @@ function create()
         $("canvas").replaceWith("<iframe>retakeSAT.html</iframe>");
     }
     
-    this.physics.add.collider(player, desks, quiz(), null, this);
+    this.physics.add.collider(player, desks, quiz, null, this);
     cursors = this.input.keyboard.createCursorKeys();
 }
 
